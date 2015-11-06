@@ -34,9 +34,11 @@ def getReadingsFromDB(database):
 
 bloodGlucoseReadings = getReadingsFromDB(args.database)
 DailyAverageGlucoseReadings = bloodGlucoseReadings['Reading'].resample('D',how='mean',fill_method='ffill')
+QuarterlyAverageGlucoseReadings = bloodGlucoseReadings['Reading'].resample('Q',how='mean',fill_method='ffill')
 
 print bloodGlucoseReadings 
-print DailyAverageGlucoseReadings
+#print DailyAverageGlucoseReadings
+print QuarterlyAverageGlucoseReadings
 
 #DailyAverageGlucosePlot = DailyAverageGlucoseReadings.plot(use_index=True,title="Joshua C. Smith - Daily Blood Glucose Average")
 #fig=DailyAverageGlucosePlot.get_figure()
@@ -45,8 +47,11 @@ print DailyAverageGlucoseReadings
 #bloodGlucoseReadings.hist(column='Reading', ax=ax)
 #ax.title("Blood Glucose Readings")
 #fig.savefig('bghist')
+bins=[60,80,100,120,140,160,180,200,220,240,260,280,300,320]
 fig = plt.figure(1)
 plt.subplot(111)
-plt.hist(bloodGlucoseReadings['Reading'], normed=True)
+plt.xlabel('Blood Glucose mg/dL')
+plt.ylabel('Percentage')
+plt.hist(bloodGlucoseReadings['Reading'],  bins=bins)
 fig.savefig('foo')
 
