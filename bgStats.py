@@ -37,7 +37,7 @@ DailyAverageGlucoseReadings = bloodGlucoseReadings['Reading'].resample('D',how='
 QuarterlyAverageGlucoseReadings = bloodGlucoseReadings['Reading'].resample('Q',how='mean',fill_method='ffill')
 
 print bloodGlucoseReadings 
-#print DailyAverageGlucoseReadings
+print DailyAverageGlucoseReadings
 print QuarterlyAverageGlucoseReadings
 
 #DailyAverageGlucosePlot = DailyAverageGlucoseReadings.plot(use_index=True,title="Joshua C. Smith - Daily Blood Glucose Average")
@@ -51,7 +51,12 @@ bins=[60,80,100,120,140,160,180,200,220,240,260,280,300,320]
 fig = plt.figure(1)
 plt.subplot(111)
 plt.xlabel('Blood Glucose mg/dL')
-plt.ylabel('Percentage')
+plt.ylabel('Number of Readings')
+plt.title('Joshua C. Smith Blood Glucose Readings')
 plt.hist(bloodGlucoseReadings['Reading'],  bins=bins)
 fig.savefig('foo')
+print (bloodGlucoseReadings.std())
 
+fasting = bloodGlucoseReadings.loc[bloodGlucoseReadings['Fasting'] == 'BB']
+
+print (fasting.mean())

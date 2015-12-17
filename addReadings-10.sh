@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-06 06:53' --type  BB 213
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-06 09:20' --type  AB  188
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-06 11:45' --type  BL 181
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-06 14:10' --type  AL 189
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-06 20:44' --type  BD 167
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-07 04:38' --type  BB 194
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11:07 07:27' --type  AB 171
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-08 07:36' --type  BB 188
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-08 10:04' --type  AB 227
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-08 11:36' --type  BL 172
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-08 12:52' --type  AL 147
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-08 18:51' --type  BD 159
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 06:50' --type  BB 232
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 09:02' --type  AB 188
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 12:07' --type  BL 180
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 14:20' --type  AL 193
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 18:51' --type  BD 212
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-09 20:05' --type  AD 159
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 06:53' --type  BB 171
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 09:05' --type  AB 151
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 11:51' --type  BL 150
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 14:03' --type  AL 138
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 17:36' --type  BD 126
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-10 19:45' --type  AD 188
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-11 06:55' --type  BB 158
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-11 09:11' --type  AB 138
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-11 12;15' --type  BL 156
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-11 19:01' --type  BD 131
+./bgAddReading.py --db ~/health/glucose-after-insulin-10.db -d '2015-11-11 21:09' --type  AD 171
